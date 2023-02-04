@@ -1,0 +1,81 @@
+:root {
+    --primary: #021a84;
+    --secondary: #fe4c4c;
+    --text: #171717;
+    --gray: #999;
+    --light-gray: #e5e5e5;
+    --green-text: #156d33;
+    --blue-text: #021a84;
+    --red-text: #e5532a;
+    --background: #e5e5e5;
+    --purple-gradient: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.6),
+            rgba(255, 255, 255, 0.6)
+        ),
+        #021a84;
+    --green-gradient: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.6),
+            rgba(255, 255, 255, 0.6)
+        ),
+        #2ada66;
+    --red-gradient: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.6),
+            rgba(255, 255, 255, 0.6)
+        ),
+        #e5532a;
+}
+html,
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    background-color: var(--background);
+}
+.wrapper {
+    max-width: 1160px;
+    width: 100%;
+    margin-inline: auto;
+}
+/* button */
+.btn {
+    height: 44px;
+    min-width: 149px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    color: inherit;
+}
+.btn-border {
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    color: var(--blue-text);
+}
+.btn-solid {
+    border-radius: 8px;
+    color: white;
+    background-color: var(--primary);
+}
+.heading {
+    font-size: 34px;
+    font-weight: 700;
+    color: #010d42;
+}
+.btn-scrollTop {
+    width: 40px;
+    height: 40px;
+    background: var(--primary);
+    box-shadow: 0px 16px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    right: 40px;
+    bottom: 40px;
+}
